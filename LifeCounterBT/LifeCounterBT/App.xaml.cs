@@ -6,11 +6,22 @@ namespace LifeCounterBT
 {
     public partial class App : Application
     {
+        public static string DbFilePath;
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPageView();
+        }
+
+        public App( string dbFilePath)
+        {
+            InitializeComponent();
+
+            DbFilePath = dbFilePath;
+
+            MainPage = new MainPageView();
         }
 
         protected override void OnStart()
