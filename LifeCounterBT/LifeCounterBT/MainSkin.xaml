@@ -11,6 +11,7 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="TextColor" Value="White" />
         <Setter Property="FontSize" Value="100" />
+        <Setter Property="Margin" Value="0,-22,0,0" />
     </Style>
 
     <Style x:Key="LifeLabelStyle" TargetType="Label">
@@ -18,12 +19,13 @@
         <Setter Property="TextColor" Value="White" />
         <Setter Property="HorizontalTextAlignment" Value="Center" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0,-22,0,0" />
     </Style>
 
     <Style x:Key="UserNameStyle" TargetType="Label">
-        <Setter Property="Margin" Value="0,0,10,0"/>
-        <Setter Property="FontSize" Value="22"/>
-        <Setter Property="HorizontalTextAlignment" Value="End"/>
-        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="Margin" Value="0,0,10,0" />
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="TextColor" Value="White" />
     </Style>
 </ResourceDictionary>
