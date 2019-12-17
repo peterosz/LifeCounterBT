@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LifeCounterBT.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +13,7 @@ namespace LifeCounterBT
         {
             InitializeComponent();
 
-            MainPage = new MainPageView();
+            MainPage = new AppShell();
         }
 
         public App( string dbFilePath)
@@ -21,7 +22,7 @@ namespace LifeCounterBT
 
             DbFilePath = dbFilePath;
 
-            MainPage = new MainPageView();
+            MainPage = new AppShell();
         }
 
         protected override void OnStart()

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using Xamarin.Forms;
 
 namespace LifeCounterBT.ViewModels
 {
@@ -118,6 +119,28 @@ namespace LifeCounterBT.ViewModels
         {
             OpponentLife++;
         }
+
+        #endregion
+
+        #region ShowFlyoutMenuCommand
+
+        private MvxCommand _ShowFlyoutMenuCommand;
+
+        public MvxCommand ShowFlyoutMenuCommand
+        {
+            get
+            {
+                if (_ShowFlyoutMenuCommand == null)
+                    _ShowFlyoutMenuCommand = new MvxCommand(ShowFlyoutMenuCommandCall);
+                return _ShowFlyoutMenuCommand;
+            }
+        }
+
+        private void ShowFlyoutMenuCommandCall()
+        {
+            Shell.Current.FlyoutIsPresented = true;
+        }
+
 
         #endregion
 

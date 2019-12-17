@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 
-namespace LifeCounterBT
+namespace LifeCounterBT.Views
 {
     [DesignTimeVisible(false)]
     public partial class MainPageView : ContentPage
