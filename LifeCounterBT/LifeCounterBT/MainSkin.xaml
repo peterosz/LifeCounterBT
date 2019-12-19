@@ -27,5 +27,6 @@
         <Setter Property="FontSize" Value="22" />
         <Setter Property="HorizontalTextAlignment" Value="End" />
         <Setter Property="TextColor" Value="White" />
-    </Style>
+    </Style>    
+    
 </ResourceDictionary>

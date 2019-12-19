@@ -25,13 +25,16 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition />
             </Grid.RowDefinitions>
+
+
             <Button
                 Grid.Row="0"
                 Grid.Column="0"
                 BackgroundColor="Transparent"
                 Command="{Binding ShowFlyoutMenuCommand}"
                 HorizontalOptions="Start"
-                ImageSource="MenuIcon.png" />
+                ImageSource="MenuIcon.xml" />
+
             <Label
                 Grid.Row="0"
                 Grid.ColumnSpan="3"
